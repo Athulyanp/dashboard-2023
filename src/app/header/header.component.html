@@ -1,0 +1,80 @@
+<mat-toolbar >
+     <!-- button 1 -->
+     <button (click)="menubuttonClick()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+
+<span>Purple</span>
+<!--  -->
+<form _ngcontent-dyi-c3  class="navbar-form">
+    <div _ngcontent-dyi-c3 class="input-group no-border">
+        <input _ngcontent-dyi-c3 class="form-control" placeholder="Search..." type="text" >
+        <button _ngcontent-dyi-c3 class="btn btn-white btn-round btn-just-icon" mat-raised-button type="submit"><i _ngcontent-dyi-c3 class="material-icons">search</i>
+            <div _ngcontent-dyi-c3 class="ripple-container">
+
+            </div></button>
+    </div>
+</form>
+<!--  -->
+
+
+
+<span class="example-spacer"></span>
+    <div class="flex-container ">
+        <ul>
+         
+               
+            <li>
+                <!-- button 2 -->
+                <button mat-icon-button class="example-icon favorite-icon"
+                    aria-label="Example icon-button with heart icon">
+                    <mat-icon>settings</mat-icon>
+                </button>
+            </li>
+            <li>
+                <!-- button 3-->
+                <button mat-icon-button class="example-icon favorite-icon"
+                    aria-label="Example icon-button with heart icon">
+                    <mat-icon>fullscreen</mat-icon>
+                </button>
+            </li>
+            <li>
+                <!-- button 4-->
+                <button mat-icon-button class="example-icon favorite-icon"
+                    aria-label="Example icon-button with heart icon">
+                    <mat-icon>sms</mat-icon>
+                </button>
+            </li>
+            <li>
+                <!-- button 5 -->
+                <button   [matMenuTriggerFor]="noti"    mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>notifications</mat-icon>
+                </button>
+                <mat-menu #noti="matMenu" >
+                    <h4>Notifications</h4>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item><mat-icon>event</mat-icon>Event today</button>
+                    <button mat-menu-item><mat-icon>info</mat-icon>Updates</button>
+                    <button mat-menu-item><mat-icon>local_offer</mat-icon>Promotions</button>
+                    <button mat-menu-item><mat-icon>person_add</mat-icon>Added Joel to contact list</button>
+                  
+                  </mat-menu>
+               
+                  
+            </li>
+            <li>
+                <!-- button 5 -->
+                <button [matMenuTriggerFor]="menu"     mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>person</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item><mat-icon>settings</mat-icon>Settings</button>
+                    <button mat-menu-item><mat-icon>account_box</mat-icon>Profile</button>
+                    <button mat-menu-item><mat-icon>notifications_off</mat-icon>   Disable notification</button>
+                    <button mat-menu-item>   <mat-icon>exit_to_app</mat-icon> Sign out</button>
+                  </mat-menu>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>

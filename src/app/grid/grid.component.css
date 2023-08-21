@@ -1,0 +1,15 @@
+mat-grid-tile {
+    background: lightblue;
+  }
+  mat-grid-tile.two{
+    background-color: magenta;
+
+  }
+  mat-grid-tile.three{
+    background-color: greenyellow;
+
+  }
+  mat-grid-tile.four{
+    background-color: gold;
+
+  }

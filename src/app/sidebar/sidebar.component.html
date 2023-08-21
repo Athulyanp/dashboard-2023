@@ -1,0 +1,60 @@
+
+<div class="pro">
+    <div class="profile">
+        <img src="https://www.nicepng.com/png/detail/52-522753_photo-of-a-business-woman-professional-woman-png.png" alt="no image">
+        <h2>User</h2> 
+       <h4>Project Manager</h4>
+        <h5>user123@gmail.com</h5>
+
+       
+
+    </div>
+    <mat-divider class="divide"></mat-divider>
+    
+</div>
+<div class="dash">
+  
+    <a routerLink=""> Dashboard  <mat-icon>home</mat-icon></a>
+    <a   [matMenuTriggerFor]="menu">Apps<mat-icon>apps</mat-icon></a>
+    <mat-menu #menu="matMenu">
+        <a  routerLink="calender"  class="Calender"  mat-menu-item>Calender</a>
+        <a  routerLink="media" class="media" mat-menu-item>Media</a>
+        
+      </mat-menu>
+     
+      <a  [matMenuTriggerFor]="menus">Material<mat-icon>equalizer</mat-icon></a>
+      <mat-menu #menus="matMenu">
+         <div class="material">
+              <a  routerLink="checkbox" mat-menu-item>Checkbox</a>
+              <a  routerLink="datepicker" mat-menu-item>Datepiker</a>
+              <a  routerLink="select" mat-menu-item>select</a>
+              <a  routerLink="grid" mat-menu-item>Grid</a>
+              <a  routerLink="button" mat-menu-item>Button</a>
+         </div>
+          
+        </mat-menu>
+        <a  routerLink="chart"> Charts <mat-icon> show_chart </mat-icon></a>
+        <a routerLink="forms"> Forms<mat-icon>  looks_3 </mat-icon></a>
+
+       
+        <h3>Projects</h3>
+        <button><a  routerLink="">+ ADD A PROJECTS</a></button>
+        <h3>Categories</h3>
+
+       <div class="radio">
+            <mat-radio-group aria-label="Select an option">
+               <a routerLink="free"> <mat-radio-button value="1">free</mat-radio-button></a>
+                <a routerLink="pro"><mat-radio-button value="2">pro</mat-radio-button></a>
+              </mat-radio-group>
+       </div>
+          
+
+
+
+
+    
+</div>
+
+
+  
+

@@ -1,0 +1,11 @@
+
+components:
+        
+        header
+        sidebar
+        footer
+        home:
+           card
+           area-chart
+           table
+           
